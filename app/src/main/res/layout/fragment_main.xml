@@ -14,20 +14,34 @@
         android:layout_marginBottom="20sp"
         android:textSize="20dp" />
     <Button
+        android:text="Default Alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="8"/>
+        android:ems="12"/>
     <Button
+        android:text="Coloured Alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="8"/>
+        android:ems="12"/>
     <Button
+        android:text="Custom icon alert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="8"/>
+        android:ems="12"/>
     <Button
+        android:text="Text only alert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="8"/>
+        android:ems="12"/>
+    <Button
+        android:text="On click alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"/>
+    <Button
+        android:text="Verbose alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"/>
 
 </LinearLayout>
