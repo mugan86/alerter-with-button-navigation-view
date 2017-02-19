@@ -14,31 +14,37 @@
         android:layout_marginBottom="20sp"
         android:textSize="20dp" />
     <Button
+        android:id="@+id/default_alerterButton"
         android:text="Default Alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
+        android:id="@+id/coloured_alerterButton"
         android:text="Coloured Alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
+        android:id="@+id/custom_icon_alerterButton"
         android:text="Custom icon alert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
+        android:id="@+id/text_only_alerterButton"
         android:text="Text only alert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
+        android:id="@+id/onclick_alerterButton"
         android:text="On click alert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
+        android:id="@+id/verbose_alerterButton"
         android:text="Verbose alert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
