@@ -15,37 +15,37 @@
         android:textSize="20dp" />
     <Button
         android:id="@+id/default_alerterButton"
-        android:text="Default Alerter"
+        android:text="@string/default_alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
         android:id="@+id/coloured_alerterButton"
-        android:text="Coloured Alerter"
+        android:text="@string/coloured_alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
         android:id="@+id/custom_icon_alerterButton"
-        android:text="Custom icon alert"
+        android:text="@string/custom_icon_alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
         android:id="@+id/text_only_alerterButton"
-        android:text="Text only alert"
+        android:text="@string/text_only_alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
         android:id="@+id/onclick_alerterButton"
-        android:text="On click alert"
+        android:text="@string/onclick_alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>
     <Button
         android:id="@+id/verbose_alerterButton"
-        android:text="Verbose alert"
+        android:text="@string/verbose_alerter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"/>

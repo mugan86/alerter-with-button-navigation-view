@@ -2,5 +2,14 @@
     <string name="app_name">Alerter</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_contact">Contact</string>
+
+    <!--fragment_main.xml-->
+    <string name="default_alerter">Default Alerter</string>
+    <string name="coloured_alerter">Coloured Alerter</string>
+    <string name="custom_icon_alerter">Custom icon alert</string>
+    <string name="text_only_alerter">Text only alert</string>
+    <string name="onclick_alerter">On CLick Alerter</string>
+    <string name="verbose_alerter">Verbose Alerter</string>
+
 </resources>
