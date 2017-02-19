@@ -3,6 +3,8 @@ package com.amugika.alerter;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,14 +22,13 @@ public class MainFragment extends Fragment {
     private Button default_alerterButton, coloured_alerterButton, custom_icon_alerterButton,
             text_only_alerterButton, onclick_alerterButton, verbose_alerterButton;
 
-    private View rootView;
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         //Inflate the layout for this fragment
 
-        rootView = inflater.inflate(
+        View rootView = inflater.inflate(
                 R.layout.fragment_main, container, false);
 
         default_alerterButton = (Button) rootView.findViewById(R.id.default_alerterButton);
@@ -42,8 +43,7 @@ public class MainFragment extends Fragment {
         return rootView;
     }
 
-    private void addActions()
-    {
+    private void addActions() {
         default_alerterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,16 +110,27 @@ public class MainFragment extends Fragment {
         verbose_alerterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String text = "The alert scales to accommodate larger bodies of text. \nThe alert scales to accommodate larger bodies of text.";
                 Alerter.create(getActivity())
                         .setTitle("Alert Title")
                         .setIcon(R.drawable.ic_dashboard_black_24dp)
                         .setBackgroundColor(R.color.colorPrimary)
                         .setDuration(10000)
-                        .setText("The alert scales to accommodate larger bodies of text. " +
-                                "The alert scales to accommodate larger bodies of text. " +
-                                "The alert scales to accommodate larger bodies of text.")
+                        .setText(text)
                         .show();
             }
         });
+
     }
+
+    private Spanned getHtmlTextToTextView(String html)
+    {
+        // get our html content
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) return Html.fromHtml(html,0);
+        return Html.fromHtml(html);
+
+    }
+
+
 }
