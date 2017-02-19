@@ -70,10 +70,10 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Alerter.create(getActivity())
-                        .setTitle("Alert Title")
+                        .setTitle("Data Send Correct!!")
                         .setText("Alert text...")
-                        .setDuration(3000)
-                        .setBackgroundColor(R.color.colorPrimary)
+                        .setDuration(5000)
+                        .setBackgroundColor(R.color.GreenCorrectText)
                         .setIcon(R.drawable.ic_dashboard_black_24dp)
                         .show();
             }
@@ -83,8 +83,8 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Alerter.create(getActivity())
-                        .setText("Alert text...")
-                        .setBackgroundColor(R.color.colorPrimary)
+                        .setText("Error text...")
+                        .setBackgroundColor(R.color.Crimson)
                         .show();
             }
         });
