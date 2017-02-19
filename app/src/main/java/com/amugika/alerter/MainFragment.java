@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.tapadoo.alerter.Alerter;
 
@@ -49,6 +50,7 @@ public class MainFragment extends Fragment {
                 Alerter.create(getActivity())
                         .setTitle("Alert Title")
                         .setText("Alert text...")
+                        .setBackgroundColor(R.color.colorPrimary)
                         .show();
             }
         });
@@ -71,6 +73,7 @@ public class MainFragment extends Fragment {
                         .setTitle("Alert Title")
                         .setText("Alert text...")
                         .setDuration(3000)
+                        .setBackgroundColor(R.color.colorPrimary)
                         .setIcon(R.drawable.ic_dashboard_black_24dp)
                         .show();
             }
@@ -81,6 +84,40 @@ public class MainFragment extends Fragment {
             public void onClick(View view) {
                 Alerter.create(getActivity())
                         .setText("Alert text...")
+                        .setBackgroundColor(R.color.colorPrimary)
+                        .show();
+            }
+        });
+
+        onclick_alerterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Alerter.create(getActivity())
+                        .setTitle("Alert Title")
+                        .setText("Alert text...")
+                        .setDuration(10000)
+                        .setBackgroundColor(R.color.colorPrimary)
+                        .setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Toast.makeText(getActivity(), "OnClick Called", Toast.LENGTH_LONG).show();
+                            }
+                        })
+                        .show();
+            }
+        });
+
+        verbose_alerterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Alerter.create(getActivity())
+                        .setTitle("Alert Title")
+                        .setIcon(R.drawable.ic_dashboard_black_24dp)
+                        .setBackgroundColor(R.color.colorPrimary)
+                        .setDuration(10000)
+                        .setText("The alert scales to accommodate larger bodies of text. " +
+                                "The alert scales to accommodate larger bodies of text. " +
+                                "The alert scales to accommodate larger bodies of text.")
                         .show();
             }
         });
